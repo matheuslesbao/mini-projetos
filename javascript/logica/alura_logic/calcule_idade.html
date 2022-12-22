@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <input
+      type="number"
+      class="anoNasc"
+      placeholder="Em que ano voce nasceu."
+    />
+    <button class="calc" type="button">Calcule idade</button>
+    <div class="idade"></div>
+  </body>
+  <script>
+    function setIdade() {
+      let anoAtual = 2022;
+      let inputNasc = Number(document.querySelector(".anoNasc").value);
+
+      if (inputNasc > 2022) {
+        alert("Coloque um ano Valido");
+      } else if (inputNasc == 0) {
+        alert("Preencha um numero valido");
+      } else {
+        const showIdade = (document.querySelector(".idade").innerHTML =
+          "Sua idade é: " + (anoAtual - inputNasc));
+      }
+    }
+
+    const btnCalc = document.querySelector(".calc");
+    btnCalc.addEventListener("click", () => setIdade());
+  </script>
+</html>

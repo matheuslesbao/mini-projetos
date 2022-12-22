@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Calculo de IMC</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <h1>Calcule seu IMC</h1>
+  </header>
+
+  <main class="container">
+    <section>
+      <div class="field error">
+        <label class="glowtext">Coloque sua Altura</label>
+        <input id="height" type="text" maxlength="4" placeholder="0.00"
+          oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" />
+      </div>
+      <div class="field" data-unit="Kg">
+        <label class="glowtext">Coloque seu peso</label>
+        <input id="weight" type="text" maxlength="3"
+          oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" />
+      </div>
+      <button id="btn_calc" class="" type="button">Calcule</button>
+
+      <div class="response"></div>
+    </section>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

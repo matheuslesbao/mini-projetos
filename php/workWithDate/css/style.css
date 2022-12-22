@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background: #e6e6e6;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+nav p:nth-child(2) {
+  font-size: 2em;
+  color: darkslateblue;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+}
+main,
+h3,
+p {
+  margin: 0.7rem 0.7rem;
+}
