@@ -1,0 +1,19 @@
+/* Font Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #e5e5e5;
+}
+
+/* Class */
+.container {
+  width: min(100% - 1em, 69em);
+  margin-inline: auto;
+}
