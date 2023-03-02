@@ -6,6 +6,8 @@ WORKDIR /usr/app
 
 COPY package*.json ./
 
+COPY dbinit/init.sql /docker-entrypoint-initdb.d/
+
 RUN npm ci
 
 COPY . .
