@@ -2,3 +2,7 @@
 .gitignore
 .dockerignore
 debug.log
+node_modules
+npm-debug.log
+.git
+.vscode
