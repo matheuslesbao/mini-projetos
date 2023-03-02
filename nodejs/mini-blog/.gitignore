@@ -1,3 +1,4 @@
 .env
-.dockignore
+.gitignore
+.dockerignore
 debug.log
