@@ -1,12 +1,13 @@
 const express = require("express");
 const app = express();
 
-const port = process.env.port || 3000;
+const { User } = require('./src/models');
 
-app.get('/', (req, res) => {
-  res.send('Testando app')
-})
+app.use(express.json());
+
+
+const port = process.env.port || 3000;
 
 app.listen(port, () => {
   console.log(` Escutando na porta localhost:${port}`);
-})
+});
